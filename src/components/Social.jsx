@@ -32,7 +32,7 @@ const SocialCards = () => {
         fetchLinks();
     }, []);
     return (
-        <Box sx={{ mt: 10 }}>
+        <Box sx={{ mt: 5}}>
             <IconButton
                 component="a"
                 href={linkedin}
