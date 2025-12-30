@@ -20,7 +20,8 @@ export default function NavAppBar() {
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const [navConfig, setNavConfig] = React.useState(null);
 
-    // 🔹 Charger le fichier JSON
+
+    // Charger le fichier JSON
     React.useEffect(() => {
         fetch("/profile/navbar.config.json")
             .then((res) => res.json())
