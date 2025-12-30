@@ -8,13 +8,24 @@ import {
     TimelineDot,
     TimelineOppositeContent,
 } from "@mui/lab";
-import { Paper, Typography, Chip, Box, Container } from "@mui/material";
+import {
+    Paper,
+    Typography,
+    Chip,
+    Box,
+    Container,
+    useTheme,
+    useMediaQuery,
+} from "@mui/material";
 import WorkIcon from "@mui/icons-material/Work";
 import { motion } from "framer-motion";
 import { colors } from "../styles/colors";
 
 const ExperienceTimeline = () => {
     const [experiences, setExperiences] = useState([]);
+
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
     useEffect(() => {
         const fetchExp = async () => {
@@ -30,72 +41,129 @@ const ExperienceTimeline = () => {
     }, []);
 
     return (
-        <Container sx={{ my: 14 }}>
+        <Container sx={{ my: { xs: 6, md: 14 } }}>
             <Typography
-                variant="h4"
+                variant={isMobile ? "h5" : "h4"}
                 fontWeight="bold"
                 textAlign="center"
                 gutterBottom
                 color={colors.primary}
             >
-                Background & Achievements 
+                Background & Achievements
             </Typography>
-            <Typography variant="h5" color={colors.textLight} sx={{ textAlign: 'center' }} gutterBottom>
+
+            <Typography
+                variant={isMobile ? "body1" : "h6"}
+                color={colors.textLight}
+                textAlign="center"
+                gutterBottom
+            >
                 where my skills met real-world challenges
             </Typography>
-            <Timeline position="alternate" sx={{ my: 5 }}>
+
+            <Timeline
+                position={isMobile ? "right" : "alternate"}
+                sx={{ my: 5 }}
+            >
                 {experiences.map((exp, index) => (
                     <TimelineItem key={index}>
-                        <TimelineOppositeContent sx={{ alignItems: 'center', pt: 2 }}>
-                            <Typography
-                                variant="body2"
-                                sx={{ color: colors.textLight, fontWeight: 'bold', flexDirection: 'center' }}
-                            >
-                                {exp.period}
-                            </Typography>
-                        </TimelineOppositeContent>
+                        {!isMobile && (
+                            <TimelineOppositeContent sx={{ pt: 2 }}>
+                                <Typography
+                                    variant="body2"
+                                    fontWeight="bold"
+                                    color={colors.textLight}
+                                >
+                                    {exp.period}
+                                </Typography>
+                            </TimelineOppositeContent>
+                        )}
+
                         <TimelineSeparator>
                             <TimelineDot sx={{ backgroundColor: colors.primary }}>
-                                <WorkIcon />
+                                <WorkIcon fontSize="small" />
                             </TimelineDot>
-                            {index < experiences.length - 1 && <TimelineConnector />}
+                            {index < experiences.length - 1 && (
+                                <TimelineConnector />
+                            )}
                         </TimelineSeparator>
-                        <TimelineContent>
-                            {/* Motion wrapper pour animation */}
+
+                        <TimelineContent sx={{ px: { xs: 1, md: 2 } }}>
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
-                                transition={{ duration: 0.6, delay: index * 0.2 }}
+                                transition={{ duration: 0.5 }}
                             >
-                                <Paper elevation={3} sx={{ p: 2 }}>
-                                    <Box sx={{ display: 'flex', alignItems: 'center' }} gap={1} mb={1}>
+                                <Paper
+                                    elevation={3}
+                                    sx={{
+                                        p: 2,
+                                        borderRadius: 2,
+                                    }}
+                                >
+                                    {/* Period visible only on mobile */}
+                                    {isMobile && (
+                                        <Typography
+                                            variant="caption"
+                                            fontWeight="bold"
+                                            color={colors.textLight}
+                                        >
+                                            {exp.period}
+                                        </Typography>
+                                    )}
+
+                                    <Box
+                                        display="flex"
+                                        alignItems="center"
+                                        mb={1}
+                                    >
                                         <Box
                                             component="img"
                                             src={exp.logo}
                                             alt={exp.company}
-                                            sx={{ width: 100, height: 60, objectFit: "contain" }}
+                                            sx={{
+                                                width: isMobile ? 80 : 100,
+                                                height: 50,
+                                                objectFit: "contain",
+                                            }}
                                         />
                                     </Box>
-                                    <Typography variant="subtitle2" color="textSecondary" sx={{ textAlign: 'start' }}>
+
+                                    <Typography
+                                        variant="subtitle2"
+                                        color="text.secondary"
+                                        mb={1}
+                                    >
                                         {exp.contract}
                                     </Typography>
-                                    <Box mt={1}>
-                                        {exp.missions.map((mission, i) => (
-                                            <Typography
-                                                key={i}
-                                                variant="body2"
-                                                sx={{ mb: 0.5, textAlign: 'start' }}
-                                            >
-                                                {exp.missions.length > 1 && '• '}
-                                                {mission}
-                                            </Typography>
-                                        ))}
-                                    </Box>
 
-                                    <Box mt={1} display="flex" flexWrap="wrap" gap={1}>
+                                    {exp.missions.map((mission, i) => (
+                                        <Typography
+                                            key={i}
+                                            variant="body2"
+                                            mb={0.5}
+                                        >
+                                            {exp.missions.length > 1 && "• "}
+                                            {mission}
+                                        </Typography>
+                                    ))}
+
+                                    <Box
+                                        mt={1}
+                                        display="flex"
+                                        flexWrap="wrap"
+                                        gap={1}
+                                    >
                                         {exp.tools.map((tool, i) => (
-                                            <Chip key={i} label={tool} size="small" sx={{ color: colors.primary }} />
+                                            <Chip
+                                                key={i}
+                                                label={tool}
+                                                size="small"
+                                                sx={{
+                                                    color: colors.primary,
+                                                }}
+                                            />
                                         ))}
                                     </Box>
                                 </Paper>
