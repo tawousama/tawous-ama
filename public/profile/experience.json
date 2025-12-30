@@ -1,17 +1,16 @@
 {
     "experiences": [
-        
         {
             "company": "EDF",
             "period": "April 2025 - September 2025",
             "contract": "Internship",
             "logo": "/images/edf.png",
             "missions": [
-                "Développement frontend et backend d’un tableau de bord interactif en temps réel pour le monitoring énergétique.",
-                "Refonte complète de l’architecture logicielle, en transition d’un modèle monolithique vers une architecture microservices.",
-                "Mise en place de pipelines de données ETL, avec interfaçage de systèmes externes pour l’agrégation de données hétérogènes.",
-                "Automatisation des flux de données et des mécanismes de communication entre composants distribués.",
-                "Élaboration de scripts techniques participant à la mission de contrôle-commande, facilitant la gestion et le pilotage de systèmes industriels."
+                "Full-stack development of an interactive, real-time energy monitoring dashboard.",
+                "Architectural overhaul, transitioning the software from a monolithic model to a microservices architecture.",
+                "Implementation of ETL data pipelines, interfacing with external systems to aggregate heterogeneous data.",
+                "Automation of data flows and communication protocols between distributed components.",
+                "Development of technical scripts for Command and Control (C&C), streamlining the management and operation of industrial systems."
             ],
             "tools": [
                 "Python",
@@ -48,12 +47,12 @@
             "contract": "CDI",
             "logo": "/images/Finoutsource.png",
             "missions": [
-                "Conception et développement d’une solution bancaire complète (workflow, scoring, analyse financière) utilisant l’OCR et des modèles de Machine Learning, déployée chez Essalam Bank et Fransabank en tant que prestataire.",
-                "Automatisation d’un système d’alertes industrielles pour le suivi des équipements critiques, dans le cadre d’une mission chez Amimer Energie.",
-                "Développement d’un logiciel de gestion des opportunités commerciales, avec un workflow intégré menant au module de facturation, réalisé pour le client ICOSNET.",
-                "Recréation et migration d’un site e-commerce de PrestaShop vers Odoo eCommerce pour un client basé en Suisse, avec personnalisation complète de la boutique et intégration des processus de vente.",
-                "Animation d’ateliers de formation à la fin de chaque mission et formation de nouveaux développeurs sur Python et Odoo, notamment pour le client APN.",
-                "Création d’une application mobile avec Flutter pour la gestion budgétaire et financière des petites entreprises."
+                "End-to-end development of a banking solution (workflow, scoring, financial analysis) leveraging OCR and Machine Learning models; deployed for Essalam Bank and Fransabank.",
+                "Automation of an industrial alerting system for critical equipment monitoring during a mission for Amimer Energie.",
+                "Development of a Sales Opportunity Management software for ICOSNET, featuring an integrated workflow linked to a dedicated invoicing module.",
+                "Full migration and redesign of an e-commerce platform from PrestaShop to Odoo eCommerce for a Swiss client, including custom store development and sales process integration.",
+                "Technical leadership and training: Led post-mission workshops and mentored new developers in Python and Odoo, notably for the APN project.",
+                "Mobile app development with Flutter, focused on budget and financial management for small businesses (SMEs)"
             ],
             "tools": [
                 "Python",
