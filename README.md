@@ -1,16 +1,33 @@
-# React + Vite
+# 🌐 Portfolio – React.js & Material UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Présentation
 
-Currently, two official plugins are available:
+Ce projet est mon **portfolio personnel**, développé avec **React.js** et **Material UI (MUI)**.  
+Il a pour objectif de présenter mon profil, mes compétences, mes projets ainsi que mes expériences professionnelles, à travers une interface moderne, responsive et performante.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Technologies utilisées
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js  
+- Material UI (MUI)  
+- JavaScript (ES6+)  
+- HTML5 / CSS3  
+- Git & GitHub  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Fonctionnalités
+
+- Interface moderne et responsive  
+- Navigation fluide entre les différentes sections  
+- Présentation du profil et des compétences  
+- Section projets avec descriptions détaillées  
+- Section experience
+- Section de ma vie hors le domaine de la technologie  
+- Design cohérent basé sur Material Design  
+
+---
+
+## 📂 Structure du projet
+
