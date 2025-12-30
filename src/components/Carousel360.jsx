@@ -66,7 +66,6 @@ const Carousel = () => {
 
         <div className="carousel-card current">
           <img src={cards[currentIndex].image}  />
-          <h3>{cards[currentIndex].title}</h3>
         </div>
 
         <div className="carousel-card next">
