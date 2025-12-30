@@ -26,40 +26,67 @@ const AboutPage = () => {
 
     return (
         // <Stack direction="row" sx={{ mt: 20, textAlign: "start", justifyContent: "center", }}>
-        <Box sx={{mt:14,  textAlign: 'center', justifyContent: 'center',minHeight: "100vh",}}>
-             <Typography
+        <Box
+            sx={{
+                my: 14,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center", // centre tout horizontalement
+                minHeight: "100vh",
+                textAlign: "center",
+                px: 2, // padding horizontal
+            }}
+        >
+            <Typography
                 variant="h4"
                 fontWeight="bold"
-                textAlign="center"
                 gutterBottom
                 color={colors.primary}
             >
                 Beyond the Code: People, Nature, and Traditions
             </Typography>
-            <Container disableGutters sx={{ mx: 10, textAlign: "center", justifyContent: "center",  backgroundColor: colors.background, }}>
+
+            <Container
+                maxWidth="md" // limite la largeur pour que le texte ne soit pas trop large
+                sx={{
+                    backgroundColor: colors.background,
+                    mb: 4, // marge en bas
+                }}
+            >
                 <Typography
-                    variant="body1" color={colors.textLight}
-                    sx={{ textIndent: "2em", marginBottom: "1em" }} // retrait et marge
+                    variant="body1"
+                    color={colors.textLight}
+                    sx={{ textIndent: "2em", marginBottom: "1em" }}
                 >
                     {intro}
                 </Typography>
                 <Typography
-                    variant="body1" color={colors.textLight}
-                    sx={{ textIndent: "2em", marginBottom: "1em" }} // retrait et marge
+                    variant="body1"
+                    color={colors.textLight}
+                    sx={{ textIndent: "2em", marginBottom: "1em" }}
                 >
                     {middle}
                 </Typography>
                 <Typography
-                    variant="body1" color={colors.textLight}
-                    sx={{ textIndent: "2em", marginBottom: "1em" }} // retrait et marge
+                    variant="body1"
+                    color={colors.textLight}
+                    sx={{ textIndent: "2em", marginBottom: "1em" }}
                 >
                     {end}
                 </Typography>
             </Container>
-            <Container sx={{mx:10}}>
+
+            <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "100%",pb:10, mb:10
+                }}
+            >
                 <Carousel />
-            </Container>
-     </Box>
+            </Box>
+        </Box>
+
     );
 };
 
