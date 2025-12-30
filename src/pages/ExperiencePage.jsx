@@ -31,16 +31,16 @@ const ExperienceTimeline = () => {
 
     return (
         <Container sx={{ my: 14 }}>
-             <Typography
-                            variant="h4"
-                            fontWeight="bold"
-                            textAlign="center"
-                            gutterBottom
-                            color={colors.primary}
-                        >
-                            My Academic and Professional Journey
-                        </Typography>
-            <Typography variant="h5" color={colors.textLight} sx={{textAlign: 'center'}} gutterBottom>
+            <Typography
+                variant="h4"
+                fontWeight="bold"
+                textAlign="center"
+                gutterBottom
+                color={colors.primary}
+            >
+                My Academic and Professional Journey
+            </Typography>
+            <Typography variant="h5" color={colors.textLight} sx={{ textAlign: 'center' }} gutterBottom>
                 Scroll down to explore it
             </Typography>
             <Timeline position="alternate" sx={{ my: 5 }}>
@@ -82,11 +82,17 @@ const ExperienceTimeline = () => {
                                     </Typography>
                                     <Box mt={1}>
                                         {exp.missions.map((mission, i) => (
-                                            <Typography key={i} variant="body2" sx={{ mb: 0.5, textAlign: 'start' }}>
-                                                • {mission}
+                                            <Typography
+                                                key={i}
+                                                variant="body2"
+                                                sx={{ mb: 0.5, textAlign: 'start' }}
+                                            >
+                                                {exp.missions.length > 1 && '• '}
+                                                {mission}
                                             </Typography>
                                         ))}
                                     </Box>
+
                                     <Box mt={1} display="flex" flexWrap="wrap" gap={1}>
                                         {exp.tools.map((tool, i) => (
                                             <Chip key={i} label={tool} size="small" sx={{ color: colors.primary }} />
