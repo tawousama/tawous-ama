@@ -51,7 +51,7 @@
                 "Automation of an industrial alerting system for critical equipment monitoring during a mission for Amimer Energie.",
                 "Development of a Sales Opportunity Management software for ICOSNET, featuring an integrated workflow linked to a dedicated invoicing module.",
                 "Full migration and redesign of an e-commerce platform from PrestaShop to Odoo eCommerce for a Swiss client, including custom store development and sales process integration.",
-                "Technical leadership and training: Led post-mission workshops and mentored new developers in Python and Odoo, notably for the APN project.",
+                "Leading post-mission workshops and mentored new developers in Python and Odoo, notably for the APN project.",
                 "Mobile app development with Flutter, focused on budget and financial management for small businesses (SMEs)"
             ],
             "tools": [
@@ -63,7 +63,8 @@
                 "OCR",
                 "Rocky Linux",
                 "Docker",
-                "GitLab"
+                "GitLab", 
+                "Flutter"
             ]
         },
         {
@@ -72,7 +73,7 @@
             "contract": "Engineering Degree in Computer Science",
             "logo": "/images/ESI_Logo.png",
             "missions": [
-                "During my five-year academic journey, at ESI, I gained both theoretical knowledge and practical experience through real-world projects in various areas of information technology and systems,"
+                "During my five-year academic journey at ESI, I built a strong foundation in information systems and computer science, combining solid theoretical knowledge with hands-on experience through real-world projects. Throughout this journey, I worked on projects covering software development, information systems analysis, databases, decision support systems, and web and mobile applications. These projects allowed me to apply concepts such as software architecture, object-oriented programming, data modeling, system design, and project management in concrete and professional-like environments. This academic experience strengthened my ability to analyze complex problems, design efficient solutions, work in teams, and adapt quickly to new technologies, preparing me to contribute effectively in professional IT and engineering contexts."
             ],
             "tools": [
                 "IT Project Management",

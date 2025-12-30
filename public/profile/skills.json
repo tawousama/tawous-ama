@@ -67,7 +67,7 @@
   "soft_skills": [
     {
       "category": "Communication",
-      "details": "Translated complex technical requirements into actionable project milestones for non-technical stakeholders"
+      "details": "Translated complex technical requirements into actionable project milestones for non-technical stakeholders."
     },
     {"category": "Problem Solving",
       "details": "Identified a recurring database latency issue and implemented a caching strategy that improved load times by 40%."
