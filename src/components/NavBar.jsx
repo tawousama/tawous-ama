@@ -50,9 +50,9 @@ export default function NavAppBar() {
                 {navConfig.sections.map((item) => (
                     <ListItem key={item.title} disablePadding>
                         <ListItemButton
-                            component="a"
-                            href={item.href}
-                            target={item.type === "link" ? "_blank" : "_self"}
+                            component={NavLink}
+                            to={item.href}
+                            // target={item.type === "link" ? "_blank" : "_self"}
                         >
                             <ListItemText primary={item.title} />
                         </ListItemButton>
