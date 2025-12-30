@@ -32,9 +32,9 @@ const ExperienceTimeline = () => {
     }, []);
 
     return (
-        <Container sx={{ my: { xs: 6, md: 14 } }}>
+        <Container sx={{ my: { xs: 10, md: 14 } }}>
             <Typography
-                variant={isMobile ? "h5" : "h4"}
+                variant="h4"
                 fontWeight="bold"
                 textAlign="center"
                 gutterBottom
