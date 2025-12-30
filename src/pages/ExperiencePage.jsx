@@ -38,10 +38,10 @@ const ExperienceTimeline = () => {
                 gutterBottom
                 color={colors.primary}
             >
-                My Academic and Professional Journey
+                Background & Achievements 
             </Typography>
             <Typography variant="h5" color={colors.textLight} sx={{ textAlign: 'center' }} gutterBottom>
-                Scroll down to explore it
+                where my skills met real-world challenges
             </Typography>
             <Timeline position="alternate" sx={{ my: 5 }}>
                 {experiences.map((exp, index) => (

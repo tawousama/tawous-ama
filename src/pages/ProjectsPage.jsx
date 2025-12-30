@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                     color="text.secondary"
                     sx={{ mb: 6, color: colors.textLight }}
                 >
-                    A selection of DevOps, Cloud, IoT, Data, and Full-Stack projects
+                    a selection of DevOps, Cloud, IoT, Data, and Full-Stack projects
                 </Typography>
 
                 <Grid container spacing={4}>
