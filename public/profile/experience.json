@@ -1,0 +1,89 @@
+{
+    "experiences": [
+        
+        {
+            "company": "EDF",
+            "period": "April 2025 - September 2025",
+            "contract": "Internship",
+            "logo": "/images/edf.png",
+            "missions": [
+                "Développement frontend et backend d’un tableau de bord interactif en temps réel pour le monitoring énergétique.",
+                "Refonte complète de l’architecture logicielle, en transition d’un modèle monolithique vers une architecture microservices.",
+                "Mise en place de pipelines de données ETL, avec interfaçage de systèmes externes pour l’agrégation de données hétérogènes.",
+                "Automatisation des flux de données et des mécanismes de communication entre composants distribués.",
+                "Élaboration de scripts techniques participant à la mission de contrôle-commande, facilitant la gestion et le pilotage de systèmes industriels."
+            ],
+            "tools": [
+                "Python",
+                "ReactJs",
+                "FastAPI",
+                "Apache Airflow",
+                "AWS",
+                "MMS",
+                "WebSocket",
+                "GitLab"
+            ]
+        },
+        {
+            "company": "Gustave Eiffel University",
+            "period": "September 2024 - September 2025",
+            "contract": "Master 2 systems and services for IoT",
+            "logo": "/images/logo_ssio.png",
+            "missions": [
+                "To further strengthen my expertise in infrastructure management and deepen my understanding of the rapidly evolving Internet of Things (IoT) landscape, I enrolled in a Master’s program in Systems and Services for IoT. This program provided a rich combination of theoretical knowledge and practical, hands-on projects. I learned to design, manage, and secure complex IT and IoT infrastructures, develop scalable applications using microservices, and analyze large volumes of data collected from sensors and connected devices. I also gained experience programming microcontrollers and working with various communication networks, including cellular networks and IoT-specific networks."
+            ],
+            "tools": [
+                "DevOps",
+                "Machine learning",
+                "Microcontrollers",
+                "Cellular Networks and IoT-Specific Networks",
+                "Network Security",
+                "Infrastructure Management",
+                "Big Data & Sensor Data Analysis"
+            ]
+        },
+        {
+            "company": "FINOUTSOURCE",
+            "period": "September 2022 - September 2024",
+            "contract": "CDI",
+            "logo": "/images/Finoutsource.png",
+            "missions": [
+                "Conception et développement d’une solution bancaire complète (workflow, scoring, analyse financière) utilisant l’OCR et des modèles de Machine Learning, déployée chez Essalam Bank et Fransabank en tant que prestataire.",
+                "Automatisation d’un système d’alertes industrielles pour le suivi des équipements critiques, dans le cadre d’une mission chez Amimer Energie.",
+                "Développement d’un logiciel de gestion des opportunités commerciales, avec un workflow intégré menant au module de facturation, réalisé pour le client ICOSNET.",
+                "Recréation et migration d’un site e-commerce de PrestaShop vers Odoo eCommerce pour un client basé en Suisse, avec personnalisation complète de la boutique et intégration des processus de vente.",
+                "Animation d’ateliers de formation à la fin de chaque mission et formation de nouveaux développeurs sur Python et Odoo, notamment pour le client APN.",
+                "Création d’une application mobile avec Flutter pour la gestion budgétaire et financière des petites entreprises."
+            ],
+            "tools": [
+                "Python",
+                "Odoo",
+                "Django",
+                "Angular",
+                "Web Scraping",
+                "OCR",
+                "Rocky Linux",
+                "Docker",
+                "GitLab"
+            ]
+        },
+        {
+            "company": "ESI - Ecole Superieure en informatique",
+            "period": "September 2018 - September 2023",
+            "contract": "Engineering Degree in Computer Science",
+            "logo": "/images/ESI_Logo.png",
+            "missions": [
+                "During my five-year academic journey, at ESI, I gained both theoretical knowledge and practical experience through real-world projects in various areas of information technology and systems,"
+            ],
+            "tools": [
+                "IT Project Management",
+                "Mobile and Web Development",
+                "Decision Support Systems (SIAD)",
+                "Data Analysis & Data Science",
+                "Quality Assurance",
+                "Software Engineering",
+                "Network"
+            ]
+        }
+    ]
+}
