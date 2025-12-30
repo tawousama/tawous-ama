@@ -27,7 +27,5 @@ Il a pour objectif de présenter mon profil, mes compétences, mes projets ainsi
 - Section de ma vie hors le domaine de la technologie  
 - Design cohérent basé sur Material Design  
 
----
 
-## 📂 Structure du projet
 
