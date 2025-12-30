@@ -91,12 +91,12 @@ const ExperienceTimeline = () => {
                                             />
                                         </Box>
 
-                                        <Typography variant="subtitle2" color="text.secondary" mb={1}>
+                                        <Typography variant="subtitle2" color="text.secondary" mb={1} sx={{textAlign: 'start'}}>
                                             {exp.contract}
                                         </Typography>
 
                                         {exp.missions.map((mission, i) => (
-                                            <Typography key={i} variant="body2" mb={0.5}>
+                                            <Typography key={i} variant="body2" mb={0.5}  sx={{textAlign: 'start'}}>
                                                 {exp.missions.length > 1 && "• "} {mission}
                                             </Typography>
                                         ))}
