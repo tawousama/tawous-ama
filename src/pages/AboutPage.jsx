@@ -7,7 +7,6 @@ const AboutPage = () => {
     const [intro, setAboutIntro] = useState([]);
     const [middle, setAboutMiddle] = useState([]);
     const [end, setAboutEnd] = useState([]);
-    const [photos, setPhotos] = useState([]);
 
     useEffect(() => {
         // Charger les missions depuis le JSON
@@ -18,9 +17,6 @@ const AboutPage = () => {
                 setAboutIntro(data.intro);
                 setAboutMiddle(data.middle);
                 setAboutEnd(data.end);
-                const pics = await fetch("/profile/images.json");
-                const pics_data = await pics.json();
-                setPhotos(pics_data);
             } catch (error) {
                 console.error("Error loading missions:", error);
             }

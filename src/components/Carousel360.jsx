@@ -47,7 +47,6 @@ const Carousel = () => {
 
   // Déroulement automatique toutes les 3 secondes
   useEffect(() => {
-    console.log(cards[0].image)
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % cards.length);
     }, 3000);
