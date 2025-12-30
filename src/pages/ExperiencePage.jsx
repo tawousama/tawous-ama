@@ -77,7 +77,7 @@ const ExperienceTimeline = () => {
                                             sx={{ width: 100, height: 60, objectFit: "contain" }}
                                         />
                                     </Box>
-                                    <Typography variant="subtitle2" color="textSecondary">
+                                    <Typography variant="subtitle2" color="textSecondary" sx={{ textAlign: 'start' }}>
                                         {exp.contract}
                                     </Typography>
                                     <Box mt={1}>
