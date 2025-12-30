@@ -87,8 +87,7 @@ const HomePage = () => {
         </Typography>
 
         <Typography variant="h5" color={colors.textLight} sx={{ mt: 3 }} gutterBottom>
-          Let’s build something amazing together! <br />
-          Let’s talk and discuss the details!
+          Let’s build something amazing together! 
         </Typography>
 
         <SocialCards />
