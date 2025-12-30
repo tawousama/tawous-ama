@@ -30,7 +30,7 @@ const ProjectsPage = () => {
         <Box sx={{ my: 14, }}>
             <Container maxWidth="lg">
                 <Typography
-                    variant="h3"
+                    variant="h4"
                     align="center"
                     gutterBottom
                     sx={{ fontWeight: "bold", color: colors.primary }}

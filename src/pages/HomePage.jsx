@@ -57,7 +57,7 @@ const HomePage = () => {
       >
         {/* Titre */}
         <Typography
-          variant="h3"
+          variant="h4"
           fontWeight="bold"
           color={colors.textLight}
           gutterBottom
